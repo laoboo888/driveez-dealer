@@ -143,12 +143,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')  # Ensure this path is correct
-print("BASE_DIR:", os.path.abspath(os.path.dirname(__file__)))
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # Move up one level
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')  # Ensure this path is correct
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'cardealer/static'),  # Add paths where your static files are stored
 ]
+
+print("BASE_DIR:", BASE_DIR)  # Debugging
+print("STATIC_ROOT:", STATIC_ROOT)  # Debugging
+
 
 # Media settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
