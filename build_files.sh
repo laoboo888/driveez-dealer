@@ -19,6 +19,7 @@ python3.9 -m pip install chardet
 python3.9 -m pip install defusedxml
 python3.9 -m pip install dj-database-url
 python3.9 -m pip install Django
+python3.9 -m pip install django
 python3.9 -m pip install django-allauth
 python3.9 -m pip install django-ckeditor
 python3.9 -m pip install django-js-asset
