@@ -11,6 +11,8 @@ cd CarDealerWeb
 echo "Installing dependencies line by line..."
 
 # Install each dependency separately
+python3.9 -m pip uninstall django-ckeditor
+python3.9 -m pip install django-ckeditor-5
 python3.9 -m pip install asgiref
 python3.9 -m pip install certifi
 python3.9 -m pip install chardet
