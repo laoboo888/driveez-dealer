@@ -4,12 +4,12 @@
 python3.9 -m ensurepip --default-pip
 python3.9 -m pip install --upgrade pip
 
+# Navigate to the Django project directory
+cd CarDealerWeb
+
 # Install dependencies
 echo "Installing dependencies..."
 python3.9 -m pip install -r requirements.txt
-
-# Navigate to the Django project directory
-cd CarDealerWeb
 
 # Check if manage.py exists
 if [ ! -f "manage.py" ]; then
