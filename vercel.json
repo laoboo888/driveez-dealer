@@ -18,7 +18,7 @@
     "routes": [
         {
           "src": "CarDealerWeb/cardealer/static/(.*)",
-          "dest": "CarDealerWeb/cardealer/static/$1"
+          "dest": "CarDealerWeb/staticfiles_build/static/$1"
         },
       {
         "src": "/(.*)",
