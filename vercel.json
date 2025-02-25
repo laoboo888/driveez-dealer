@@ -11,14 +11,14 @@
         "src": "build_files.sh",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "staticfiles_build"
+          "distDir": "CarDealerWeb/staticfiles_build"
         }
       }
     ],
     "routes": [
         {
-          "src": "/static/(.*)",
-          "dest": "/static/$1"
+          "src": "CarDealerWeb/cardealer/static/(.*)",
+          "dest": "CarDealerWeb/cardealer/static/$1"
         },
       {
         "src": "/(.*)",
