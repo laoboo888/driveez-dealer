@@ -144,7 +144,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')  # Ensure this path is correct
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')  # Ensure this path is correct
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'cardealer/static'),  # Add paths where your static files are stored
