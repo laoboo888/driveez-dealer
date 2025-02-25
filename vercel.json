@@ -24,8 +24,5 @@
         "src": "/(.*)",
         "dest": "/cardealer/wsgi.py"
       }
-    ],
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/" }
-      ]
+    ]
   }
