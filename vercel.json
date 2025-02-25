@@ -3,7 +3,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "CarDealerWeb/cardealer/wsgi.py",
+        "src": "/cardealer/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
@@ -11,18 +11,18 @@
         "src": "build_files.sh",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "CarDealerWeb/staticfiles_build"
+          "distDir": "/staticfiles_build"
         }
       }
     ],
     "routes": [
         {
-          "src": "CarDealerWeb/cardealer/static/(.*)",
-          "dest": "CarDealerWeb/staticfiles_build/static/$1"
+          "src": "/cardealer/static/(.*)",
+          "dest": "/staticfiles_build/static/$1"
         },
       {
         "src": "/(.*)",
-        "dest": "CarDealerWeb/cardealer/wsgi.py"
+        "dest": "/cardealer/wsgi.py"
       }
     ]
   }
