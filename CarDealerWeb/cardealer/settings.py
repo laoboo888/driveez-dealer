@@ -100,7 +100,7 @@ DATABASES = {
         'USER': 'postgres', 
         'PASSWORD': 'UMKHHYwzAKSgiDYzZjZmdikROQsgRLHa', 
         'HOST': 'tramway.proxy.rlwy.net',
-		'PORT': '29670',
+	'PORT': '29670',
      }
  }
 
