@@ -1,4 +1,12 @@
-# Install Python (if not already installed)
-apt-get update && apt-get install -y python3 python3-pip
-pip3 install -r requirements.txt 
-python3 manage.py collectstatic --noinput
+#!/bin/bash
+
+# Build the project
+echo "Building the project..."
+python3.9 -m pip install -r requirements.txt
+
+echo "Make Migration..."
+python3.9 manage.py makemigrations --noinput
+python3.9 manage.py migrate --noinput
+
+echo "Collect Static..."
+python3.9 manage.py collectstatic --noinput --clear
