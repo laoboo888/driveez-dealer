@@ -3,7 +3,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "CarDealerWeb/wsgi.py",
+        "src": "CarDealerWeb/cardealer/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
@@ -22,7 +22,7 @@
         },
       {
         "src": "/(.*)",
-        "dest": "CarDealerWeb/wsgi.py"
+        "dest": "CarDealerWeb/cardealer/wsgi.py"
       }
     ]
   }
