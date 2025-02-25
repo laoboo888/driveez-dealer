@@ -25,7 +25,6 @@ python3.9 -m pip install gunicorn
 python3.9 -m pip install idna
 python3.9 -m pip install oauthlib
 python3.9 -m pip install Pillow
-python3.9 -m pip install psycopg2
 python3.9 -m pip install psycopg2-binary
 python3.9 -m pip install python3-openid
 python3.9 -m pip install pytz
